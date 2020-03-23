@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<script src="script.js"></script>
+		<meta charset="utf-8"/>
+		<title>Курс JavaScript часть 1. Урок 2</title>
+	</head>
+	<body>
+		<h1>Игра "Быки и коровы"</h1>
+		Для игры нажмите кнопку "Сгенерировать число", после чего старайтесь угадать это число вводя варианты в текстовое поле и получая кол-во коров и быков для введенноги числа.
+		Вводить нужно черырехзначное число из цифр 0..9, цифры повторяться не должны.
+		<br/>
+		<br/>
+		<br/>		
+		<input id="secretNumber" type="hidden"/><input type="button" value="Сгенерировать число" onclick="onGenerateNumber();"/><br/>
+		<br/>
+		Число для проверки:<input type="text" id="enteredNumber" placeholder="Введите число"/> <input type="button" value="Проверить" onclick="onCheckNumber();"/>
+		<br/>
+		<br/>
+		<div style="color: red; font-size: 8pt; font-style: italic">
+			<b>Блок отладки:</b><br/>
+			Сгенерировано число: <span id="debugNumber"></span>
+		</div>
+	</body>
+</html>
