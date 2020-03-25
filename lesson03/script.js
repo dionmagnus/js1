@@ -26,7 +26,7 @@ function rle(value) {
 
 function onCode() {
     let inputString = document.getElementById("inputString").value;
-    if (inputString.match(/[A-Z,a-z]/)) {
+    if (inputString.match(/^[A-Z,a-z]+$/)) {
         let outputString = rle(inputString);
         document.getElementById("outputString").innerText = outputString;
     } else 
