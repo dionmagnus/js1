@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.chessboard {
+    box-sizing: border-box;
+    width: 456px;
+    color: white;
+    background-color: brown;
+    padding: 25px;
+    margin: 50px;
+}
+
+.chessboard .main-area-wrp {
+    border: 3px solid white;
+}
+
+
+.chessboard .row {
+    height: 50px;
+    position: relative;
+}
+
+.chessboard .cell {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    line-height: 50px;
+}
+
+.chessboard .row:nth-child(even) .cell:nth-child(odd) {
+    background-color: brown;
+}
+
+.chessboard .row:nth-child(odd) .cell:nth-child(even) {
+    background-color: brown;
+}
+
+.chessboard .row::before {
+    content: "1";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+
+.chessboard .row:first-child .cell::before {
+    content: "a";
+    text-transform: uppercase;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
