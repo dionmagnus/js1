@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    width: 100%;
+    clear: both;
+}
+
+.info {
+    margin: 50px;
+}
+
+.info .move-turn {
+    font-weight: bold;
+}
+
+.chessboard {
+    box-sizing: border-box;
+    width: 456px;
+    color: white;
+    background-color: brown;
+    padding: 25px;
+    margin: 0 20px 0 50px;
+    float: left;
+}
+.chessboard .main-area-wrp {
+    border: 3px solid white;
+}
+
+
+.chessboard .row {
+    height: 50px;
+    position: relative;
+}
+
+.chessboard .cell {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    line-height: 50px;
+}
+
+.chessboard .row:nth-child(even) .cell:nth-child(even) {
+    background-color: brown;
+}
+
+.chessboard .row:nth-child(odd) .cell:nth-child(odd) {
+    background-color: brown;
+}
+
+.chessboard .row:nth-child(even) .cell:nth-child(even):hover,
+.chessboard .row:nth-child(odd) .cell:nth-child(odd):hover,
+.chessboard .cell:hover {
+    background-color: lawngreen;
+}
+
+.chessboard .cell-selected {
+    background-color: green !important;
+}
+
+.chessboard .row-index {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+
+.chessboard .col-index {
+    text-transform: uppercase;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+
+
+/* chess-figures */
+
+.chess-figure {
+    background-size: 45px 45px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.white-spawn {
+    background-image: url("chess_icons/white_spawn.svg");
+}
+
+.white-rock {
+    background-image: url("chess_icons/white_rock.svg");
+}
+
+.white-knight {
+    background-image: url("chess_icons/white_knight.svg");
+}
+
+.white-bishop {
+    background-image: url("chess_icons/white_bishop.svg");
+}
+
+.white-queen {
+    background-image: url("chess_icons/white_queen.svg");
+}
+
+.white-king {
+    background-image: url("chess_icons/white_king.svg");
+}
+
+
+.black-spawn {
+    background-image: url("chess_icons/black_spawn.svg");
+}
+
+.black-rock {
+    background-image: url("chess_icons/black_rock.svg");
+}
+
+.black-knight {
+    background-image: url("chess_icons/black_knight.svg");
+}
+
+.black-bishop {
+    background-image: url("chess_icons/black_bishop.svg");
+}
+
+.black-queen {
+    background-image: url("chess_icons/black_queen.svg");
+}
+
+.black-king {
+    background-image: url("chess_icons/black_king.svg");
+}
+
+
+
